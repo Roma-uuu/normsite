@@ -3,9 +3,10 @@
 	<head>
 		<title>ClosedLake</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="swiper.min.css" rel="stylesheet" type="text/css" />
+		<link href="swiper-bundle.min.css" rel="stylesheet" type="text/css" />
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -58,20 +59,25 @@
 				<section class="content">
 					<section class="content_gallery">
 						<h2 class="gallery_title">Gallery</h2>
-						<div class="swiper">
-							<div class="swipper-wrapper">
-								<div class="swiper-slide">
-									<img src="gallery1.jpg" alt="Картинка 1" class="">
+						<div class="image-slider swiper">
+							<div class="image-slider_gallery swiper-gallery">
+									<div class="image-slider_slide swiper_slide">
+										<div class="image-slider_image">
+											<img src="gallery1.jpg" alt="Картинка 1" class="">
+										</div>
+									</div>
+								<div class="image-slider_slide swiper_slide">
+									<div class="image-slider_image">
+										<img src="gallery2.jpg" alt="Картинка 2" class="">
+									</div>
 								</div>
-								<div class="swiper-slide">
-									<img src="gallery1.jpg" alt="Картинка 1" class="">
-								</div>
-								<div class="swiper-slide">
-									<img src="gallery1.jpg" alt="Картинка 1" class="">
+								<div class="image-slider_slide swiper_slide">
+									<div class="image-slider_image">
+										<img src="gallery3.jpg" alt="Картинка 3" class="">
+									</div>
 								</div>
 							</div>
 						</div>
-						<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 						<script src="script.js"></script>
 					</section>
 					<section class="content_product products">
