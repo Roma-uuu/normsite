@@ -59,27 +59,29 @@
 				<section class="content">
 					<section class="content_gallery">
 						<h2 class="gallery_title">Gallery</h2>
-						<div class="wrapper2">
-							<div class="image-slider swiper">
-								<div class="image-slider_wrapper2 swiper-wrapper2">
-									<div class="image-slider_slide swiper-slide">
-										<div class="image-slider_image">
-											<img src="gallery1.jpg" alt="Picture_1">
-										</div>
-									</div>
-									<div class="image-slider_slide swiper-slide">
-										<div class="image-slider_image">
-											<img src="gallery2.jpg" alt="Picture_2">
-										</div>
-									</div>
-									<div class="image-slider_slide swiper-slide">
-										<div class="image-slider_image">
-											<img src="gallery3.jpg" alt="Picture_1">
-										</div>
-									</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="gallery1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="gallery2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="gallery3.jpg" alt="">
 								</div>
 							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
 						</div>
+						<script src="swiper-bundle.min.js"></script>
 						<script src="script.js"></script>
 					</section>
 					<section class="content_product products">
