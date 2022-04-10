@@ -111,9 +111,15 @@ ul {
         width: 30px;
         background-color: #333333;
     }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template: 2fr / 1fr minmax(auto, 100px) minmax(auto, 300px) 1fr;
+    }
+
 }
 .main {
-        padding: 30px 15px;
+    padding: 30px 15px;
 }
 
 .sidebar {
@@ -231,7 +237,6 @@ ul {
     color: #FF7F50;
     font-size: 80px;
 }
-
 
 
 .footer {
