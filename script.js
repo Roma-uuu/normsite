@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.image-slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -16,12 +16,6 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true
-    },
-
     // Управление стрелками с клавы
     keyboard: {
         enabled: true,
@@ -32,7 +26,7 @@ const swiper = new Swiper('.swiper', {
     // Управление колесом мыши
     mousewheel: {
         sensitivity: 1,
-        eventsTarget: ".swiper"
+        eventsTarget: ".image-slider"
     },
     // ПОдстройка высоты слайдера для каждого изображения
     autoHeight: true,
@@ -46,7 +40,7 @@ const swiper = new Swiper('.swiper', {
         delay: 2000, //пауза при прокрутке
         //оставка прокрутки на последнем слайде
         stopOnLastSlide: false,
-        disableOnInteraction: false //откл. после ручного переключения
+        disableOnInteraction: true //откл. после ручного переключения
     },
     speed: 800,
     breakpoints: {
