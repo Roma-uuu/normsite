@@ -9,7 +9,6 @@
 html,
 body {
     height: 100%;
-    background-color: #84c4b1;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -23,7 +22,6 @@ h1 {
     font-family: monospace;
     line-height: 1;
     margin: 0px 0px 50px 0px;
-    color: #333333;
 }
 h2 {
     font-size: 30px;
@@ -46,7 +44,7 @@ ul {
 .header {
     grid-area: header;
     padding: 15px;
-    background-color: white;
+
     display: grid;
     align-items: center;
     grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
@@ -54,7 +52,7 @@ ul {
 .theme-button   {
     position: absolute;
     left: 400px;
-    top: 25px;
+    top: 30px;
     display: inline-block;
     padding: 10px 25px;
     cursor: pointer;
@@ -106,24 +104,33 @@ ul {
         content: "";
         height: 2px;
         width: 30px;
-        background-color: #333333;
+
     }
     .header_burger:after {
         content: "";
         height: 2px;
         width: 30px;
-        background-color: #333333;
+
     }
     .header_burger span {
         content: "";
         height: 2px;
         width: 30px;
-        background-color: #333333;
+
     }
     .main {
         grid-area: main;
         display: grid;
         grid-template: 2fr / 1fr minmax(auto, 100px) minmax(auto, 300px) 1fr;
+    }
+    .theme-button   {
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        display: inline-block;
+        padding: 2px 40px;
+        cursor: pointer;
+        background-color: #7a7a7a;
     }
 
 }
@@ -132,9 +139,10 @@ ul {
 }
 
 .sidebar {
-    background-color: #e0be8b;
     padding: 30px 15px;
     margin: 0px 0px 30px 0px;
+    grid-column: 2 / 3;
+
 }
 .sidebar_menu{
 
@@ -158,10 +166,7 @@ ul {
         grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
     }
 }
-.sidebar {
-    grid-column: 2 / 3;
-    margin: 0;
-}
+
 .content {
     grid-column: 3 / 4;
     padding: 0px 0px 0px 30px;
@@ -249,7 +254,6 @@ ul {
 
 .swiper-scrollbar {
     cursor: pointer;
-    background-color: #fafafa;
 }
 .swiper-wrapper .swiper-button-prev::after,
 .swiper-wrapper .swiper-button-next::after {
@@ -266,7 +270,6 @@ ul {
     width: 10px;
     height: 10px;
     font-size: 5px;
-    background-color: #fff;
 }
 
 /*.swiper-pagination {
@@ -295,7 +298,6 @@ ul {
 */
 
 .footer {
-    background-color: #84c4b1;
     display: grid;
     grid-area: footer;
     padding: 15px;
