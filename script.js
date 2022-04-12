@@ -54,4 +54,5 @@ const swiper = new Swiper('.image-slider', {
             slidesPerView: 3,
         },
     },
+
 });
