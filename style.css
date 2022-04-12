@@ -44,7 +44,6 @@ ul {
 .header {
     grid-area: header;
     padding: 15px;
-
     display: grid;
     align-items: center;
     grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
@@ -121,7 +120,7 @@ ul {
     .main {
         grid-area: main;
         display: grid;
-        grid-template: 2fr / 1fr minmax(auto, 100px) minmax(auto, 300px) 1fr;
+        grid-template: 2fr / 3fr minmax(auto, 100px) minmax(auto, 300px) 1fr;
     }
     .theme-button   {
         position: absolute;
@@ -131,6 +130,9 @@ ul {
         padding: 2px 40px;
         cursor: pointer;
         background-color: #7a7a7a;
+    }
+    .sidebar {
+        display: none;
     }
 
 }
@@ -142,7 +144,6 @@ ul {
     padding: 30px 15px;
     margin: 0px 0px 30px 0px;
     grid-column: 2 / 3;
-
 }
 .sidebar_menu{
 
@@ -158,13 +159,13 @@ ul {
     font-size: 20px;
 }
 
-
 @media (min-width: 992px) {
     .main {
         grid-area: main;
         display: grid;
         grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
     }
+
 }
 
 .content {
