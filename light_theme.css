@@ -1,0 +1,36 @@
+body {
+    background-color: #84c4b1;
+}
+.header {
+    background-color: white;
+}
+
+@media (max-width: 992px) {
+    .header_burger:before {
+        background-color: #333333;
+    }
+    .header_burger:after {
+        background-color: #333333;
+    }
+    .header_burger span {
+        background-color: #333333;
+    }
+}
+.sidebar {
+    background-color: #e0be8b;
+    padding: 30px 15px;
+    margin: 0px 0px 30px 0px;
+}
+.products_button {
+    color: #fff;
+    background-color: #77608d;
+}
+.swiper-scrollbar {
+    background-color: #fafafa;
+}
+.image-slider .swiper-pagination-bullet {
+    background-color: #fff;
+}
+.footer {
+    background-color: #84c4b1;
+}
