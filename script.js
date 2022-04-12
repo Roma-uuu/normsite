@@ -1,4 +1,4 @@
-const swiper = new Swiper('.image-slider', {
+new Swiper('.image-slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
